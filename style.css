@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Modak&display=swap');
+
+body {
+    background: url(/assets/BG-pattern.jpg) repeat top left;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 30px;
+}
+
+.container {
+    max-width: 600px;
+    margin: auto;
+    background: rgb(183, 181, 199);
+    padding: 20px 30px;
+    border-radius: 30px;
+    box-shadow: 5px 5px 10px 5px rgba(49, 43, 61, 0.35);
+}
+
+h1 {
+    font-family: "Modak", system-ui;
+    font-weight: 400;
+    color: rgb(90, 85, 135);
+    font-size: 3em;
+    margin: 0px 0px 15px 0px;
+}
+
+#dog-img {
+    max-width: 100%;
+    max-height: 45vh;
+    border-radius: 30px;
+    margin-bottom: 10px;
+}
+
+#options button {
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    border-radius: 8px;
+    background-color: rgb(180, 208, 193);
+    color: rgb(76, 97, 86);
+    cursor: pointer;
+}
+
+#options button:hover {
+    background-color: rgb(162, 184, 172);
+}
+
+#result {
+    font-weight: bold;
+    margin: 10px;
+    font-size: 18px;
+}
+
+#btn-next {
+    background-color: rgb(119, 116, 144);
+    color: white;
+    font-weight: 600;
+    margin: 10px;
+    padding: 10px 30px;
+    font-size: 16px;
+    border: 0px;
+    border-radius: 30px;
+}
+
+#btn-next:hover {
+    background-color: rgb(93, 89, 124);
+}
