@@ -1,7 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Modak&display=swap');
 
 body {
-    background: url(/assets/BG-pattern.jpg) repeat top left;
+    background-image: url(assets/BG-pattern.jpg);
+    background-repeat: repeat;
+    background-position: top left;
+    background-color: rgb(180, 208, 193);
     font-family: Arial, sans-serif;
     text-align: center;
     padding: 30px;
