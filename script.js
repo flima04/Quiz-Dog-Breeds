@@ -19,26 +19,18 @@ async function loadBreeds() {
 async function loadRandomQuestion() {
   try {
     const breeds = await loadBreeds();
-
     const randomBreeds = breeds.sort(() => 0.5 - Math.random());
-    console.log(randomBreeds);
-
     const selectionRandomBreeds = randomBreeds.slice(0, 4);
-    console.log(selectionRandomBreeds);
-
     const correct = selectionRandomBreeds[Math.floor(Math.random() * 4)];
-    console.log(correct);
 
     correctBreed = correct.name;
 
     const imgResponse = await fetch(`https://api.thedogapi.com/v1/images/search?breed_ids=${correct.id}`);
-    console.log(imgResponse);
     const imgData = await imgResponse.json();
-    console.log(imgData);
 
     img.src = imgData[0].url;
     loadOptionsNoDom(selectionRandomBreeds);
-    result.textContent = '';
+    result.textContent = "";
   } catch (error) {
     alert("Erro ao carregar o quiz. Tente de novo.");
   }
